@@ -17,10 +17,10 @@ public class App {
     }
 
     public static void showRecipe(Recipe recipe) {
-        System.out.println("-------------------------------------------------------------------------------------------------------");
-        System.out.println("Title: " + recipe.title);
-        System.out.println("-----------");
-        System.out.println("Ingredients:");
+        System.out.print("-------------------------------------------------------------------------------------------------------\n" +
+        "Title: " + recipe.title + "\n" +
+        "-----------\n" +
+        "Ingredients:\n");
         for(int x = 0; x<recipe.ingredients.length; x++){
             System.out.println(recipe.ingredients[x]);
         }
